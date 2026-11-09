@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everyone's a Star!</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <script src="./javascript/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo-link" href="index.html">
+            <img class="logo" src="assets/5sos-logo.png" alt="5 Seconds of Summer tally logo">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="#">Live</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="project.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span>5 SECONDS OF SUMMER</span>
+                    <span>EVERYONE'S A STAR!</span>
+                </h1>
+
+                <a class="hero-cta" href="#">Shop the Album</a>
+            </div>
+        </section>
+
+        <section class="band-intro">
+            <div class="band-intro-content">
+                <h2>Your Favorite Boyband</h2>
+
+                <h3>5SOS Can't Stop Winning Boyband of the Year</h3>
+                <p class="band-intro-subtitle">
+                    Experts are baffled. The experts are also the band.
+                </p>
+
+                <a class="band-intro-cta" href="project.html">Listen Now</a>
+
+                <div class="band-intro-description">
+                    <p>
+                        Ladies and gentlemen, history is happening, and it’s happening
+                        in a very large arena. <strong>5 Seconds of Summer</strong>
+                        have been at it since 2011. Luke, Michael, Calum, and Ashton
+                        came up from Sydney, took over the world, and then did the one
+                        thing a boyband is never supposed to do: they didn’t break up.
+                        They came back, bringing bigger shows, a bigger budget, and a
+                        much bigger opinion of themselves.
+                    </p>
+
+                    <p>
+                        <strong>Everyone’s a Star!</strong> is the official record of
+                        their return, one marked with a suspicious number of
+                        “Boyband of the Year” wins. That’s the title they’ve given
+                        themselves, and the album does everything it can to make
+                        you agree.
+                    </p>
+
+                    <p>
+                        You can follow along as they make history, one legendary stop
+                        at a time. Or you can just listen to the songs, which are loud
+                        and catchy enough to back up every bit of the hype.
+                    </p>
+
+                    <p>
+                        <strong>
+                            Everyone’s a star, but we all know who’s the biggest.
+                        </strong>
+                    </p>
+                </div>
+            </div>
+
+            <img class="band-intro-img" src="./assets/5sos-intro.png"
+                alt="5 Seconds of Summer surrounded by a crowd of fans">
+        </section>
+
+        <div class="banner">
+            <img src="./assets/banner-image.png" alt="Portraits of the four members of 5 Seconds of Summer"
+                loading="lazy">
+        </div>
+
+        <section class="tour-dates">
+            <h2 id="tour-heading">Tour Dates</h2>
+
+            <div class="tour-list">
+                <a href="#" class="full-tour-view">See All Dates →</a>
+                <table aria-labelledby="tour-heading">
+                    <tbody>
+                        <tr class="tour-stop">
+                            <td class="tour-date">OCT 24</td>
+                            <td class="tour-city">Auckland, New Zealand</td>
+                            <td class="tour-venue">Spark Arena</td>
+                            <td class="tour-cta">
+                                <a href="#">View Tickets</a>
+                            </td>
+                        </tr>
+                        <tr class="tour-stop">
+                            <td class="tour-date">OCT 28</td>
+                            <td class="tour-city">Brisbane, Australia</td>
+                            <td class="tour-venue">Riverstage</td>
+                            <td class="tour-cta">
+                                <a href="#">View Tickets</a>
+                            </td>
+                        </tr>
+                        <tr class="tour-stop">
+                            <td class="tour-date">OCT 30</td>
+                            <td class="tour-city">Sydney, Australia</td>
+                            <td class="tour-venue">Qudos Band Arena</td>
+                            <td class="tour-cta">
+                                <a href="#">View Tickets</a>
+                            </td>
+                        </tr>
+                        <tr class="tour-stop">
+                            <td class="tour-date">NOV 2</td>
+                            <td class="tour-city">Melbourne, Australia</td>
+                            <td class="tour-venue">Rod Laver Arena</td>
+                            <td class="tour-cta">
+                                <a href="#">View Tickets</a>
+                            </td>
+                        </tr>
+                        <tr class="tour-stop">
+                            <td class="tour-date">NOV 4</td>
+                            <td class="tour-city">Adelaide, Australia</td>
+                            <td class="tour-venue">Adelaide Entertainment Centre</td>
+                            <td class="tour-cta">
+                                <a href="#">View Tickets</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <div class="video-content">
+                <div class="video-heading">
+                    <p>Everyone’s A Star!</p>
+                    <h2>Don’t<br>Miss<br>Out</h2>
+                </div>
+
+                <video class="promo-video" muted loop playsinline controls preload="metadata"
+                    aria-label="5 Seconds of Summer concert video">
+                    <source src="./assets/tour-video.MP4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+        </section>
+
+        <section class="tour-ticker">
+
+        </section>
+
+        <section class="featured-products">
+            <div class="product-card"></div>
+            <div class="product-card"></div>
+            <div class="product-card"></div>
+
+        </section>
+
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>★&emsp;&emsp;&emsp;EVERYONE’S A STAR - LIVE ON TOUR - GET TICKETS
+                    NOW&emsp;&emsp;&emsp;★&emsp;&emsp;&emsp;EVERYONE’S A STAR - LIVE ON TOUR - GET
+                    TICKETS NOW&emsp;&emsp;&emsp;★&emsp;&emsp;&emsp;EVERYONE’S A STAR - LIVE ON TOUR - GET TICKETS
+                    NOW&emsp;&emsp;&emsp;★&emsp;&emsp;&emsp;EVERYONE’S A STAR - LIVE ON TOUR
+                    - GET TICKETS NOW </span>
+                <span>★&emsp;&emsp;&emsp;EVERYONE’S A STAR - LIVE ON TOUR - GET TICKETS
+                    NOW&emsp;&emsp;&emsp;★&emsp;&emsp;&emsp;EVERYONE’S A STAR - LIVE ON TOUR - GET
+                    TICKETS NOW&emsp;&emsp;&emsp;★&emsp;&emsp;&emsp;EVERYONE’S A STAR - LIVE ON TOUR - GET TICKETS
+                    NOW&emsp;&emsp;&emsp;★&emsp;&emsp;&emsp;EVERYONE’S A STAR - LIVE ON TOUR
+                    - GET TICKETS NOW </span>
+            </div>
+        </div>
+
+        <section class="featured-products">
+            <h3>Featured Products</h3>
+            <a href="#" class="full-shop-view">Shop All →</a>
+            <div class="product-cards">
+                <div class="product-card">
+                    <p class="product-name">Everyone's a Star! Exclusive Hot Pink Glitter Vinyl</p>
+                    <p class="product-price">$32.99</p>
+                    <p class="product-cta"><a href="#">Shop Now →</a></p>
+                </div>
+                <div class="product-card">
+                    <p class="product-name">Everyone's a Star! CD</p>
+                    <p class="product-price">$13.99</p>
+                    <p class="product-cta"><a href="#">Shop Now →</a></p>
+                </div>
+                <div class="product-card">
+                    <p class="product-name">Everyone's a Star! Band T-Shirt (Black)</p>
+                    <p class="product-price">$35.99</p>
+                    <p class="product-cta"><a href="#">Shop Now →</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="off-the-record">
+            <h3>Off the Record</h3>
+            <a class="off-the-record-cta" href="#">Stalk Our Socials</a>
+
+            <img class="off-the-record-img" src=""
+                alt="Gallery of press images from 5 Seconds of Summer's Everyone's a Star! tour">
+        </section>
+
+        <section class="music-video">
+            <h3>Watch Our Music</h3>
+            <a class="music-video-cta" href="#">More Videos</a>
+            <div class="music-video-wrapper">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OOHndihD7Dc?si=427vtAASQJFLlpqd"
+                    frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html>
