@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #f5f500;
+    --pink: #ff1493;
+    --black: #111111;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--black);
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+    padding: 4px 72px 4px 32px;
+    gap: 32px;
+    background-color: var(--yellow);
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo {
+    display: block;
+    height: 82px;
+    width: auto;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+    list-style: none;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 4px 8px;
+    border-bottom: 4px solid transparent;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header nav a[aria-current="page"] {
+    border-bottom-color: var(--pink);
+}
+
+header nav a:hover {
+    background-color: var(--pink);
+}
+
+header a:focus {
+    outline: 3px solid var(--black);
+    outline-offset: 4px;
+}
+
+.product-page {
+    --product-pink: #ff009d;
+    --product-yellow: #f5ff00;
+
+    background: var(--product-pink);
+    color: var(--product-yellow);
+    padding: 60px 40px 30px;
+}

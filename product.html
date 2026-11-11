@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Everyone's a Star!</title>
+    <link rel="stylesheet" href="./styles/product.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <a class="logo-link" href="index.html">
+            <img class="logo" src="assets/5sos-logo.png" alt="5 Seconds of Summer tally logo">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Live</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="project.html" aria-current="page">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product-page">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a> /
+            <a href="shop.html">Shop</a> /
+            <span aria-current="page">Hot Pink Glitter Vinyl</span>
+        </nav>
+
+        <div class="product-layout">
+            <section class="product-gallery" aria-label="Product images">
+                <div class="product-thumbnails">
+                    <button class="thumbnail is-active" type="button" aria-label="View front of vinyl"
+                        aria-pressed="true">
+                        <img src="./assets/product-vinyl.png" alt="Album cover with hot pink glitter vinyl">
+                    </button>
+
+                    <button class="thumbnail" type="button" aria-label="View back of vinyl" aria-pressed="false">
+                        <img src="./assets/product-photo-2.png" alt="Back of the album packaging">
+                    </button>
+
+                    <button class="thumbnail" type="button" aria-label="View complete vinyl package"
+                        aria-pressed="false">
+                        <img src="./assets/product-photo-3.png" alt="Complete vinyl package">
+                    </button>
+                </div>
+
+                <div class="product-viewer">
+                    <div class="product-image-stage">
+                        <button class="gallery-arrow previous" type="button"
+                            aria-label="Previous product image">‹</button>
+
+                        <img id="main-product-image" src="./assets/product-vinyl.png"
+                            alt="Album cover with hot pink glitter vinyl">
+
+                        <button class="gallery-arrow next" type="button" aria-label="Next product image">›</button>
+                    </div>
+
+                    <div class="gallery-dots" aria-label="Choose product image">
+                        <button class="gallery-dot is-active" type="button" aria-label="Show image 1"
+                            aria-pressed="true"></button>
+                        <button class="gallery-dot" type="button" aria-label="Show image 2"
+                            aria-pressed="false"></button>
+                        <button class="gallery-dot" type="button" aria-label="Show image 3"
+                            aria-pressed="false"></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-info" aria-labelledby="product-title">
+                <span class="exclusive-badge">Exclusive</span>
+
+                <h1 id="product-title">
+                    Everyone’s a Star! Hot Pink Glitter Vinyl
+                </h1>
+
+                <p class="product-price">$32.99</p>
+
+                <div class="purchase-controls">
+                    <div class="quantity-field">
+                        <label for="quantity">Quantity</label>
+                        <select id="quantity" name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <button class="add-to-cart" type="button">Add to Cart</button>
+                </div>
+            </section>
+
+            <section class="product-accordions" aria-label="More product details">
+                <details>
+                    <summary>Product Description</summary>
+                    <div class="accordion-content">
+                        <p>Bring Everyone’s a Star! to your turntable with this exclusive hot pink glitter vinyl.
+                            Featuring bold album artwork and a bright pressing made to stand out in your collection,
+                            it’s ready for repeat listens and full-volume singalongs.
+                            Format: Vinyl LPColor: Hot pink glitterPrice: $32.99</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Tracklist</summary>
+                    <div class="accordion-content">
+                        <p>Everyone’s A Star!
+                            NOT OK
+                            Telephone Busy
+                            Boyband
+                            No. 1 Obsession
+                            I’m Scared I’ll Never Sleep
+                            istillfeelthesame
+                            Ghost
+                            Sick of Myself
+                            Evolve
+                            The Rocks
+                            Jawbreaker
+                        </p>
+                    </div>
+                </details>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>
