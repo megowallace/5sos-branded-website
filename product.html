@@ -5,8 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Everyone's a Star!</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./styles/product.css">
-    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer>
+    </script>
+
+    <script src="./javascript/script.js" defer></script>
 </head>
 
 <body>
@@ -16,62 +29,58 @@
             <img class="logo" src="assets/5sos-logo.png" alt="5 Seconds of Summer tally logo">
         </a>
 
-        <nav>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+            aria-controls="main-nav"></button>
+
+        <nav id="main-nav" aria-label="Main navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Live</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Video</a></li>
-                <li><a href="project.html" aria-current="page">Shop</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="https://5sos.com/pages/tour">LIVE</a></li>
+                <li><a href="https://5secondsofsummer.lnk.to/EAS">MUSIC</a></li>
+                <li><a href="https://www.youtube.com/channel/UC-vKwDHcbPLtjml81ohGRng">VIDEO</a></li>
+                <li><a href="product.html" aria-current="page">SHOP</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="product-page">
         <nav class="breadcrumbs" aria-label="Breadcrumb">
-            <a href="index.html">Home</a> /
-            <a href="shop.html">Shop</a> /
-            <span aria-current="page">Hot Pink Glitter Vinyl</span>
+            <a href="index.html">HOME</a> /
+            <a href="shop.html">SHOP</a> /
+            <span aria-current="page">HOT PINK GLITTER VINYL</span>
         </nav>
 
         <div class="product-layout">
             <section class="product-gallery" aria-label="Product images">
-                <div class="product-thumbnails">
-                    <button class="thumbnail is-active" type="button" aria-label="View front of vinyl"
-                        aria-pressed="true">
-                        <img src="./assets/product-vinyl.png" alt="Album cover with hot pink glitter vinyl">
-                    </button>
 
-                    <button class="thumbnail" type="button" aria-label="View back of vinyl" aria-pressed="false">
-                        <img src="./assets/product-photo-2.png" alt="Back of the album packaging">
-                    </button>
-
-                    <button class="thumbnail" type="button" aria-label="View complete vinyl package"
-                        aria-pressed="false">
-                        <img src="./assets/product-photo-3.png" alt="Complete vinyl package">
-                    </button>
-                </div>
-
-                <div class="product-viewer">
-                    <div class="product-image-stage">
-                        <button class="gallery-arrow previous" type="button"
-                            aria-label="Previous product image">‹</button>
-
-                        <img id="main-product-image" src="./assets/product-vinyl.png"
-                            alt="Album cover with hot pink glitter vinyl">
-
-                        <button class="gallery-arrow next" type="button" aria-label="Next product image">›</button>
+                <div class="product-nav">
+                    <div>
+                        <img src="assets/product-pics/product-vinyl.png" alt="View front of vinyl">
                     </div>
 
-                    <div class="gallery-dots" aria-label="Choose product image">
-                        <button class="gallery-dot is-active" type="button" aria-label="Show image 1"
-                            aria-pressed="true"></button>
-                        <button class="gallery-dot" type="button" aria-label="Show image 2"
-                            aria-pressed="false"></button>
-                        <button class="gallery-dot" type="button" aria-label="Show image 3"
-                            aria-pressed="false"></button>
+                    <div>
+                        <img src="assets/product-pics/product-photo-2.webp" alt="View back of vinyl">
+                    </div>
+
+                    <div>
+                        <img src="assets/product-pics/product-photo-3.png" alt="View complete vinyl package">
                     </div>
                 </div>
+
+                <div class="product-slider">
+                    <div>
+                        <img src="assets/product-pics/product-vinyl.png" alt="Album cover with hot pink glitter vinyl">
+                    </div>
+
+                    <div>
+                        <img src="assets/product-pics/product-photo-2.webp" alt="Back of the album packaging">
+                    </div>
+
+                    <div>
+                        <img src="assets/product-pics/product-photo-3.png" alt="Complete vinyl package">
+                    </div>
+                </div>
+
             </section>
 
             <section class="product-info" aria-labelledby="product-title">
@@ -105,32 +114,110 @@
                     <div class="accordion-content">
                         <p>Bring Everyone’s a Star! to your turntable with this exclusive hot pink glitter vinyl.
                             Featuring bold album artwork and a bright pressing made to stand out in your collection,
-                            it’s ready for repeat listens and full-volume singalongs.
-                            Format: Vinyl LPColor: Hot pink glitterPrice: $32.99</p>
+                            it’s ready for repeat listens and full-volume singalongs.</p>
+                        <p>Format: Vinyl LP</p>
+                        <p>Color: Hot pink glitter</p>
+                        <p>Price: $32.99</p>
                     </div>
                 </details>
 
                 <details>
                     <summary>Tracklist</summary>
                     <div class="accordion-content">
-                        <p>Everyone’s A Star!
-                            NOT OK
-                            Telephone Busy
-                            Boyband
-                            No. 1 Obsession
-                            I’m Scared I’ll Never Sleep
-                            istillfeelthesame
-                            Ghost
-                            Sick of Myself
-                            Evolve
-                            The Rocks
-                            Jawbreaker
-                        </p>
+                        <p>1 – EVERYONE’S A STAR!<br>2 – NOT OK<br>3 – TELEPHONE BUSY<br>4 – BOYBAND<br>5 – NO.
+                            1 OBSESSION<br>6 – I’M SCARED I’LL NEVER SLEEP<br>7 – ISTILLFEELTHESAME<br>8 –
+                            GHOST<br>9 – SICK OF MYSELF<br>10 – EVOLVE<br>11 – THE ROCKS<br>12 - JAWBREAKER</p>
                     </div>
                 </details>
             </section>
         </div>
+        <section class="related-products" aria-labelledby="related-title">
+            <h2 id="related-title">You May Also Like</h2>
+
+            <div class="related-products-grid">
+
+                <article class="related-card">
+                    <img src="assets/product-pics/product-vinyl.png"
+                        alt="Everyone’s a Star! album cover with pink vinyl" loading="lazy">
+
+                    <h3>
+                        Everyone’s a Star! Exclusive Hot Pink Glitter Vinyl
+                    </h3>
+
+                    <p class="related-price">$32.99</p>
+
+                    <a href="product.html">
+                        Shop Now <span aria-hidden="true">→</span>
+                    </a>
+                </article>
+
+                <article class="related-card">
+                    <img src="assets/product-pics/product-cd.png" alt="Everyone’s a Star! CD in a jewel case"
+                        loading="lazy">
+
+                    <h3>Everyone’s a Star! CD</h3>
+
+                    <p class="related-price">$13.99</p>
+
+                    <a href="product-cd.html">
+                        Shop Now <span aria-hidden="true">→</span>
+                    </a>
+                </article>
+
+                <article class="related-card">
+                    <img src="assets/product-pics/product-shirt.png" alt="Black Everyone’s a Star! band T-shirt"
+                        loading="lazy">
+
+                    <h3>Everyone’s a Star! BAND T-SHIRT (BLACK)</h3>
+
+                    <p class="related-price">$35.99</p>
+
+                    <a href="product-shirt.html">
+                        Shop Now <span aria-hidden="true">→</span>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
     </main>
+    <footer class="site-footer">
+        <img class="footer-band" src="./assets/5sos.gif" alt="">
+
+        <nav class="footer-socials" aria-label="Social media and music">
+            <a href="https://www.facebook.com/5secondsofsummer/">
+                <img src="./assets/footer-socials/facebook.png" alt="">
+            </a>
+
+            <a href="https://x.com/5SOS" aria-label="Twitter">
+                <img src="./assets/footer-socials/twitter.png" alt="">
+            </a>
+
+            <a href="https://www.instagram.com/5sos/?hl=en">
+                <img src="./assets/footer-socials/instagram.png" alt="">
+            </a>
+
+            <a href="https://www.youtube.com/channel/UC-vKwDHcbPLtjml81ohGRng">
+                <img src="./assets/footer-socials/youtube.png" alt="">
+            </a>
+
+            <a
+                href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://music.apple.com/us/artist/5-seconds-of-summer/538811449&ved=2ahUKEwjA4OaX-4CYAxV8mSYFHV76CYUQFnoECCcQAQ&usg=AOvVaw2upyTeNA5t9YjVEgdmWO8O">
+                <img src="./assets/footer-socials/apple-music.png" alt="">
+            </a>
+
+            <a href="https://open.spotify.com/artist/5Rl15oVamLq7FbSb0NNBNy">
+                <img src="./assets/footer-socials/spotify.png" alt="">
+            </a>
+
+            <a
+                href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.tiktok.com/%405sos%3Flang%3Den&ved=2ahUKEwj8h4i0-4CYAxWzmmoFHTAIOTkQFnoECCAQAQ&usg=AOvVaw3eZjv-ct-wo8O9Zr5Lt88d">
+                <img src="./assets/footer-socials/tiktok.png" alt="">
+            </a>
+        </nav>
+
+        <p>© 2026 5 Seconds of Summer</p>
+    </footer>
 
 </body>
 
